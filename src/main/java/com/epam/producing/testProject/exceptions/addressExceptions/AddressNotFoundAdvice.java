@@ -1,4 +1,4 @@
-package com.epam.producing.testProject.exceptions;
+package com.epam.producing.testProject.exceptions.addressExceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ControllerAdvice
-public class EmployeeNotFoundAdvice {
+public class AddressNotFoundAdvice {
 
     @ResponseBody
-    @ExceptionHandler(EmployeeNotFoundException.class)
+    @ExceptionHandler(AddressNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    String EmployeeNotFoundHandler(EmployeeNotFoundException ex){
+    String AddressNotFoundHandler(AddressNotFoundException ex){
         return ex.getMessage();
     }
 }

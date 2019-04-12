@@ -1,0 +1,11 @@
+CREATE TABLE employees(
+                          employee_id int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+                          employee_name VARCHAR (100),
+                          employee_role VARCHAR (100)
+                        );
+
+                        INSERT INTO employees(employee_name, employee_role) VALUES ('Yanchevskaya Anna', "junior");
+                        INSERT INTO employees(employee_name, employee_role) VALUES ('Savelyeva Alla', "senior");
+                        INSERT INTO employees(employee_name, employee_role) VALUES ('Krivobok Dmitriy', "delivery manager");
+
+                        SELECT * FROM employees;

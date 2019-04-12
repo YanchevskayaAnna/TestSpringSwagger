@@ -1,4 +1,4 @@
-package com.epam.producing.testProject.exceptions;
+package com.epam.producing.testProject.exceptions.employeeExceptions;
 
 public class EmployeeNotFoundException extends RuntimeException {
 
